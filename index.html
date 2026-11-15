@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090e">
+  <title>CSS Column Animation Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <h1>CSS Column Animation</h1>
+      <p>Four ways to bring columns to life with CSS</p>
+    </header>
+
+    <section class="animation-card" aria-labelledby="fade-title">
+      <h2 id="fade-title">Fade Animation</h2>
+      <div class="stage fade-stage">
+        <div class="columns fade-columns">
+          <span class="col"></span><span class="col"></span><span class="col"></span><span class="col"></span>
+        </div>
+      </div>
+      <pre><code>.col {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 0.6s forwards;
+}</code></pre>
+    </section>
+
+    <section class="animation-card" aria-labelledby="slide-title">
+      <h2 id="slide-title">Slide Animation</h2>
+      <div class="stage slide-stage">
+        <div class="columns slide-columns">
+          <span class="col"></span><span class="col"></span><span class="col"></span><span class="col"></span>
+        </div>
+      </div>
+      <pre><code>.col {
+  transform: translateX(-80px);
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+}</code></pre>
+    </section>
+
+    <section class="animation-card" aria-labelledby="flip-title">
+      <h2 id="flip-title">Flip Animation</h2>
+      <div class="stage flip-stage">
+        <div class="columns flip-columns">
+          <span class="col"></span><span class="col"></span><span class="col"></span><span class="col"></span>
+        </div>
+      </div>
+      <pre><code>.col {
+  transform: rotateY(90deg);
+  animation: flipIn 0.6s forwards;
+}</code></pre>
+    </section>
+
+    <section class="animation-card" aria-labelledby="wave-title">
+      <h2 id="wave-title">Wave Animation</h2>
+      <div class="stage wave-stage">
+        <div class="columns wave-columns">
+          <span class="col"></span><span class="col"></span><span class="col"></span><span class="col"></span>
+        </div>
+      </div>
+      <pre><code>.col {
+  animation: wave 1s infinite;
+}</code></pre>
+    </section>
+
+    <footer>HTML · CSS · Pure keyframe animations</footer>
+  </main>
+</body>
+</html>
